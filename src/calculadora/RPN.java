@@ -15,9 +15,6 @@ public class RPN {
 		this.commando = commando;
 	}
 	public double resultado( ) {
-		double a, b;
-		int j;
-		
 		for(int i = 0; i < commando.length( ); i++) {
 			// si es un digito
 			if(Character.isDigit(commando.charAt(i))) {
@@ -70,4 +67,7 @@ public class RPN {
 	}
 	private String commando;
 	private NodoPila arriba;
+	private double a;
+	private double b;
+	private int j;
 }
