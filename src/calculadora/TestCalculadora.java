@@ -21,9 +21,13 @@ public class TestCalculadora extends TestCase{
 		double esperado2 = 9F;
 		double esperado3 = 3F;
 		
-	assertEquals(esperado1 , resultado1);
-	assertEquals(esperado2 , resultado2);
-	assertEquals(esperado3 , resultado3);
+	assertEquals(esperado1 , resultado1); //prueba valida
+	assertEquals(esperado2 , resultado2); //prueba valida
+	assertEquals(esperado3 , resultado3); //prueba valida
+	
+	assertEquals(0 , resultado1);    //prueba no valida
+	assertEquals(36 , resultado2); //prueba  no valida
+	assertEquals(13 , resultado3); //prueba no valida
 	
 	}
 }
